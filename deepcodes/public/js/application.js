@@ -28,9 +28,10 @@ $(document).ready(function () {
           var randCell = Math.floor(Math.random()*9)+1;
           Game.turns.push(new Turn(randCell));
           $("#grid div").css("background-color", "#fff");
+          $("#grid div").css("background-color", "#fff");
           $('#grid div:nth-child(' + randCell + ')').css({'background-color': '#7f8c8d'});
         }
-        if (progress < 1200) { requestAnimationFrame(repeatOften); }
+        if (progress < 2400) { requestAnimationFrame(repeatOften); }
       };
       requestAnimationFrame(repeatOften);
     },
